@@ -1,8 +1,8 @@
 const fs = require('fs');
 const inquirer = require("inquirer");
-const Engineer = require("./engineer");
-const Intern = require("./intern");
-const Manager = require("./manager");
+const Engineer = require("./lib/engineer");
+const Intern = require("./lib/intern");
+const Manager = require("./lib/manager");
 const path = require('path');
 const dist = path.resolve(__dirname, 'dist');
 const distPath = path.join(dist, 'index.html');
@@ -51,7 +51,7 @@ const buildManager = () => {
             },
             {
                 type: 'input',
-                message: "What is the team manager's employee number?",
+                message: "What is the manager's employee number?",
                 name: 'id',
                 validate: id => {
                     if (id) {
@@ -64,7 +64,7 @@ const buildManager = () => {
             },
             {
                 type: 'input',
-                message: "What is the team manager's email address?",
+                message: "What is the manager's email address?",
                 name: 'email',
                 validate: email => {
                     if (email) {
@@ -77,7 +77,7 @@ const buildManager = () => {
             },
             {
                 type: 'input',
-                message: "What is the team manager's office number?",
+                message: "What is the manager's office number?",
                 name: 'office',
                 validate: office => {
                     if (office) {
