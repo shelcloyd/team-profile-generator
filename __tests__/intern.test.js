@@ -3,23 +3,31 @@ const Intern = require("../lib/intern");
 const sara = new Intern("Sara", "963852741", "none@none.com");
 
 describe("Intern", () => {
-    describe("data", () => {
+    describe("initialization", () => {
         it("should return the data passed into the constructor", () => {
-            expect(intern.name).toBe("Sara");
-            expect(intern.id).toBe("963852741");
-            expect(intern.email).toBe("none@none.com");
+            expect(sara.name).toBe("Sara");
+            expect(sara.id).toBe("963852741");
+            expect(sara.email).toBe("none@none.com");
         });
-        it("should return the intern name from the getName() method", () => {
-            expect(intern.getName()).toBe("Sara");
+    });
+    describe("getName()", () => {
+        it("should return the intern name", () => {
+            expect(sara.getName()).toBe("Sara");
         });
-        it("should return the intern id from the getId() method", () => {
-            expect(intern.getId()).toBe("963852741");
+    });
+    describe("getId()", () => {
+        it("should return the intern id", () => {
+            expect(sara.getId()).toBe("963852741");
         });
-        it("should return the intern email from the getEmail() method", () => {
-            expect(intern.getEmail()).toBe("none@none.com");
+    });
+    describe("getEmail()", () => {
+        it("should return the intern email", () => {
+            expect(sara.getEmail()).toBe("none@none.com");
         });
-        it("should return the intern role from the getRole() method", () => {
-            expect(intern.getRole()).toBe("Intern");
+    });
+    describe("getRole()", () => {
+        it("should return the 'Intern' role", () => {
+            expect(sara.getRole()).toBe("Intern");
         });
     });
 });

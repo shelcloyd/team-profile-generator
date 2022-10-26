@@ -3,23 +3,31 @@ const Engineer = require("../lib/engineer");
 const evan = new Engineer("Evan", "741852963", "none@none.com");
 
 describe("Engineer", () => {
-    describe("data", () => {
+    describe("initialization", () => {
         it("should return the data passed into the constructor", () => {
-            expect(engineer.name).toBe("Evan");
-            expect(engineer.id).toBe("741852963");
-            expect(engineer.email).toBe("none@none.com");
+            expect(evan.name).toBe("Evan");
+            expect(evan.id).toBe("741852963");
+            expect(evan.email).toBe("none@none.com");
         });
-        it("should return the engineer name from the getName() method", () => {
-            expect(engineer.getName()).toBe("Evan");
+    });
+    describe("getName()", () => {
+        it("should return the engineer name", () => {
+            expect(evan.getName()).toBe("Evan");
         });
-        it("should return the engineer id from the getId() method", () => {
-            expect(engineer.getId()).toBe("741852963");
+    });
+    describe("getID()", () => {
+        it("should return the engineer id", () => {
+            expect(evan.getId()).toBe("741852963");
         });
-        it("should return the engineer email from the getEmail() method", () => {
-            expect(engineer.getEmail()).toBe("none@none.com");
+    });
+    describe("getEmail()", () => {
+        it("should return the engineer email", () => {
+            expect(evan.getEmail()).toBe("none@none.com");
         });
-        it("should return the engineer role from the getRole() method", () => {
-            expect(engineer.getRole()).toBe("Engineer");
+    });
+    describe("getRole()", () => {
+        it("should return the 'Engineer' role", () => {
+            expect(evan.getRole()).toBe("Engineer");
         });
     });
 });

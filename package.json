@@ -22,6 +22,6 @@
   "homepage": "https://github.com/shelcloyd/team-profile-generator#readme",
   "dependencies": {
     "inquirer": "^8.2.4",
-    "jest": "^29.2.1"
+    "jest": "^29.2.2"
   }
 }
