@@ -48,6 +48,8 @@ ___
 ## **How to Use README.md Generator**
 When you run node on the index.js file, you will be prompted with a series of questions asking for information about your team members. After each set of questions, you will be presented with a menu to select whether or not you'd like to add another member, specifying which role they have. Once you have added all neccessary team members, select the 'Done Building Team' option. When you switch over to the code, you will see a 'dist' folder and within that folder there will be your index.html page ready to open in the browser!
 
+* https://drive.google.com/file/d/1hP39pgKKB7YcF1PKF70zUCkiFrKXXqOq/view
+
 ___
 
 <div id="license"></div>
